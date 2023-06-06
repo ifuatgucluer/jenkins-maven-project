@@ -17,7 +17,7 @@ pipeline {
                 sh 'mvn -f hello-app/pom.xml test'
             }
             post {
-                always {
+                always {..
                     junit 'hello-app/target/surefire-reports/*.xml'
                 }
             }
